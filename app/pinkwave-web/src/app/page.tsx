@@ -11,7 +11,7 @@ const frameMetadata = getFrameMetadata({
   ],
   image: {
     aspectRatio: '1:1',
-    src: `http://static.socialdev.club/e/pinkwave/teaser.png`,
+    src: `http://static.socialdev.club/pinkwave/teaser.png`,
   },
 });
 
