@@ -3,16 +3,16 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        hostname: 'static.palete.me',
+        hostname: 'static.socialdev.club',
         protocol: 'https',
       },
       {
-        hostname: 'static.palete.me',
+        hostname: 'static.socialdev.club',
         protocol: 'http',
       },
     ],
   },
-  transpilePackages: ['frames.js', 'frames.js/next', 'next/server', 'next/server.js'],
+  transpilePackages: ['next/server', 'next/server.js'],
   typescript: {
     // !! WARN !!
     // Dangerously allow production builds to successfully complete even if
