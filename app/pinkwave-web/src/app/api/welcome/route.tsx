@@ -1,8 +1,9 @@
 import satori from 'satori';
 import sharp from 'sharp';
-import { getFrameHtmlResponse, FrameRequest } from '@coinbase/onchainkit/frame';
 import { NextRequest, NextResponse } from 'next/server';
 import { NEXT_PUBLIC_URL } from '../../config';
+import { getFrameHtmlResponse } from '../../../utils/getFrameHtmlResponse';
+import { FrameRequest } from '../../../types';
 
 async function getResponse(req: NextRequest): Promise<NextResponse> {
   const body: FrameRequest = await req.json();
@@ -56,7 +57,6 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
   );
 
   const pngBuffer = await sharp(Buffer.from(svg)).png().toBuffer();
-  console.debug('🚀 ~ getResponse ~ pngBuffer:', pngBuffer);
 
   // pngBuffer to data image
   const dataImage = `data:image/png;base64,${pngBuffer.toString('base64')}`;
