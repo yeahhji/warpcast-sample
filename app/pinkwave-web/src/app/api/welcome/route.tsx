@@ -35,15 +35,6 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
       }}
     >
       <img src="https://static.socialdev.club/pinkwave/welcome.png" width="600px" height="600px" alt="img" />
-      {/* <div
-        style={{
-          background: `url("${imageDataUrl}")`,
-          bottom: '80px',
-          height: '150px',
-          position: 'absolute',
-          width: '150px',
-        }}
-      /> */}
       <img
         style={{ bottom: '80px', position: 'absolute', zIndex: 1 }}
         src={imageDataUrl}

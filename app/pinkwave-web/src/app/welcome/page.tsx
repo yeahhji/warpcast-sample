@@ -17,12 +17,6 @@ const frameMetadata = getFrameMetadata({
 });
 
 export const metadata: Metadata = {
-  description: 'LFG',
-  openGraph: {
-    description: 'LFG',
-    images: [`http://static.socialdev.club/pinkwave/teaser.png`],
-    title: 'pinkwave',
-  },
   other: {
     ...frameMetadata,
   },
