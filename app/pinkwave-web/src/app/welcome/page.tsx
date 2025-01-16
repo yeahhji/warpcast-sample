@@ -1,24 +1,13 @@
-import { getFrameMetadata } from '@coinbase/onchainkit/frame';
 import type { Metadata } from 'next';
 import { NEXT_PUBLIC_URL } from '../config';
 
-const frameMetadata = getFrameMetadata({
-  buttons: [
-    {
-      action: 'post',
-      label: '🎀 Join the PinkWave 🎀',
-    },
-  ],
-  image: {
-    aspectRatio: '1:1',
-    src: `http://static.socialdev.club/pinkwave/join.png`,
-  },
-  postUrl: `${NEXT_PUBLIC_URL}/api/welcome`,
-});
-
 export const metadata: Metadata = {
   other: {
-    ...frameMetadata,
+    'fc:frame:button:0': '🎀 Join the PinkWave 🎀',
+    'fc:frame:button:0:action': 'post',
+    'fc:frame:image': 'http://static.socialdev.club/pinkwave/join.png',
+    'fc:frame:image:aspect_ratio': '1:1',
+    'fc:frame:post_url': `${NEXT_PUBLIC_URL}/api/welcome`,
   },
   title: 'pinkwave',
 };
