@@ -3,6 +3,7 @@ import { NEXT_PUBLIC_URL } from '../config';
 
 export const metadata: Metadata = {
   other: {
+    'fc-frame': 'vNext',
     'fc:frame:button:0': '🎀 Join the PinkWave 🎀',
     'fc:frame:button:0:action': 'post',
     'fc:frame:image': `${NEXT_PUBLIC_URL}/join.png`,
