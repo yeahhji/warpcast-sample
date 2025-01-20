@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   other: {
     'fc:frame:button:0': '🎀 Join the PinkWave 🎀',
     'fc:frame:button:0:action': 'post',
-    'fc:frame:image': 'http://static.socialdev.club/pinkwave/join.png',
+    'fc:frame:image': `${NEXT_PUBLIC_URL}/join.png`,
     'fc:frame:image:aspect_ratio': '1:1',
     'fc:frame:post_url': `${NEXT_PUBLIC_URL}/api/welcome`,
   },

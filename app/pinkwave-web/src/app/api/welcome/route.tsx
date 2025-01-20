@@ -35,7 +35,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
         width: '100%',
       }}
     >
-      <img src="https://static.socialdev.club/pinkwave/welcome.png" width="600px" height="600px" alt="img" />
+      <img src={`${NEXT_PUBLIC_URL}/welcome.png`} width="600px" height="600px" alt="img" />
       <img
         style={{ bottom: '80px', position: 'absolute', zIndex: 1 }}
         src={imageDataUrl}
