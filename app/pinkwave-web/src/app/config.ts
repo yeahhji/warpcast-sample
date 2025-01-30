@@ -1,1 +1,1 @@
-export const NEXT_PUBLIC_URL = 'https://pinkwave-web.vercel.app';
+export const NEXT_PUBLIC_URL = 'https://warpcast-sample-five.vercel.app';
