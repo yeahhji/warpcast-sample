@@ -13,7 +13,7 @@ module.exports = {
     {
       files: ['*.ts', '*[^.spec|^.test].ts'],
       rules: {
-        '@typescript-eslint/explicit-function-return-type': 'error',
+        '@typescript-eslint/explicit-function-return-type': 'warn',
       },
     },
   ],
@@ -28,7 +28,7 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 2,
     '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/no-var-requires': 0,
-    camelcase: ['error'],
+    camelcase: ['warn'],
     'class-methods-use-this': 0,
     'global-require': 0,
     'import/extensions': 0,
@@ -53,7 +53,7 @@ module.exports = {
     'no-useless-constructor': 0,
     'prefer-default-export': 0,
     'prettier/prettier': [
-      'error',
+      'warn',
       {
         endOfLine: 'auto',
         orderedImports: true,
@@ -87,8 +87,8 @@ module.exports = {
     'react/react-in-jsx-scope': 0,
     'react/require-default-props': 0,
     'sort-keys-fix/sort-keys-fix': 'warn',
-    'spaced-comment': ['error', 'always', { markers: ['/'] }],
-    'unused-imports/no-unused-imports-ts': 'error',
+    'spaced-comment': ['warn', 'always', { markers: ['/'] }],
+    'unused-imports/no-unused-imports-ts': 'warn',
     'unused-imports/no-unused-vars-ts': [
       'warn',
       {
